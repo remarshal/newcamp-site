@@ -21,7 +21,7 @@
 
 <body>
 
-    <header class="jumbotron jumbotron-fluid">
+        <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
@@ -32,7 +32,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <a href="#numCampers"><button class="btn-info btn-lg text-nowrap">Reserve Campsite</button></a>
+                    <a href="#reserveForm" roll="button" class="btn-info btn-lg text-nowrap">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
                         <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
                             shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
-                    <img class="d-flex img-thumbnail ml-3" src="/img/react-lake-thumb.jpg" alt="React Lake Thumbnail">
+                    <img class="d-flex img-thumbnail ml-3" src="/img/react-lake-thumb.jpg" alt="React Lake">
                 </div>
             </div>
         </div>
@@ -112,12 +112,10 @@
                     <div class="card-body">
                         <form action="#" id="reserveForm">
                             <div class="row form-group">
-                                <div class="col-sm-6 col-form-label">
-                                <label for="numCampers">Number of Campers</label>
-                                </div>
+                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
                                 <div class="col">
                                     <select name="numCampers" id="numCampers" class="form-control">
-                                        <option value="Select...">Select...</option>
+                                        <option selected>Select...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -128,16 +126,14 @@
                                 </div>
                             </div>
                             <div class="row form-group">
-                                <div class="col-sm-6 col-form-label">
-                                    <label for="date">Date</label>
-                                </div>
-                                <div class="col">
+                                <label class="col-sm-6 col-form-label" for="date">Date</label>
+                                <div class="col-sm-6">
                                     <input type="date" id="date" name="date" class="form-control"/>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col col-form-label">
-                                    <button type="submit" value="submit" class="btn btn-primary">Search</button>
+                            <div class="row form-group">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Search</button>
                                 </div>
                             </div>
                         </form>
