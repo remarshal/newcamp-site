@@ -49,6 +49,7 @@ a, a:hover {
 }
 
 .carousel-caption {
+    /* 0.5 at end makes color transparent */
     background-color: rgba(0, 0, 0, 0.5);
 }
 
