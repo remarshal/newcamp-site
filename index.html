@@ -301,6 +301,26 @@
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+        <!-- jQuery script to set carousel cycle interval to 2000ms (2 sec) upon load-->
+        <!--   NOTE: This code that we are using in the beginning of the jQuery script:
+            $(function() { ... });
+            is the shorthand, recommended version for this code, called the jQuery ready method or ready function, which specifies a function to load when the webpage's DOM is ready:
+            $( document).ready(function() { ... });  -->
+        <script>
+            $(function () {
+                // was original code
+                // $(".carousel").carousel({ interval: 2000 });
+                // replaced by this code to work with touchscreens
+                $(".carousel").carousel( { interval: 2000, pause: "false" } );
+                $("#carouselPause").click(function () {
+                    $(".carousel").carousel("pause");
+                });
+                $("#carouselPlay").click(function () {
+                    $(".carousel").carousel("cycle");
+                });
+            });
+        </script>
+
 </body>
 
 </html>
