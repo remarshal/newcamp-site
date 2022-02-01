@@ -21,6 +21,7 @@
 
 <body>
 
+    <!-- 3 column header -->
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
@@ -38,6 +39,7 @@
         </div>
     </header>
 
+    <!-- Reserve Campsite Button -->
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -95,6 +97,7 @@
         </div>
     </div>
 
+    <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="/img/logo.png" height="30" width="30" /></a>
@@ -119,6 +122,7 @@
         </div>
     </nav>
 
+    <!-- Login button -->
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -156,38 +160,7 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        Add rows here
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        $('#exampleModal').on('show.bs.modal', event => {
-            var button = $(event.relatedTarget);
-            var modal = $(this);
-            // Use above variables to manipulate the DOM
-
-        });
-    </script>
-
+    <!-- carousel -->
     <div class="container">
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
@@ -198,6 +171,7 @@
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
                         <li data-target="#homeCarousel" data-slide-to="2"></li>
                     </ol>
+                    <!-- images with heading and decriptions     -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" class="d-block w-100" />
@@ -230,10 +204,20 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <!-- Play/Pause buttons -->
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carouselPause">
+                            <i class="fa fa-pause"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carouselPlay">
+                            <i class="fa fa-play"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- Campsite information section 1 -->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Discover & Review</h2>
@@ -250,6 +234,7 @@
             </div>
         </div>
 
+        <!-- Campsite information section 2 -->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
@@ -266,6 +251,7 @@
             </div>
         </div>
 
+        <!-- Campsite information section 3 -->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
@@ -281,6 +267,7 @@
             </div>
         </div>
 
+        <!-- 3 column footer -->
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
