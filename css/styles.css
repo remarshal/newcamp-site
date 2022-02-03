@@ -11,6 +11,9 @@ h2 {
 header h2 {
   color: #CEC8FF; }
 
+header p {
+  color: rgba(0, 0, 0, 0.5); }
+
 /* classes */
 .site-footer {
   background-image: linear-gradient(#CEC8FF, white);
