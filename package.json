@@ -12,7 +12,8 @@
   "author": "remarshal",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "node-sass": "^4.14.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
