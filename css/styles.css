@@ -2,7 +2,7 @@
 body {
   font-family: "Open Sans", sans-serif; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Lobster", cursive; }
 
 h2 {
@@ -59,13 +59,9 @@ a, a:hover {
   text-decoration: none; }
 
 #reserveModal .modal-header {
-  background-color: #17a2b8; }
-
-#reserveModal .modal-title {
+  background-color: #17a2b8;
   color: white; }
 
 #loginModal .modal-header {
-  background-color: #901CAD; }
-
-#loginModal .modal-title {
+  background-color: #901CAD;
   color: white; }

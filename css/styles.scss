@@ -1,4 +1,4 @@
-// Variables
+// Color Variables
 $color-primary: #3046C5;
 $color-secondary: #5637dd;
 $color-pale: #CEC8FF;
@@ -6,7 +6,9 @@ $color-mid: #901CAD;
 $color-dark: #60106b;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 $color-teal: #17a2b8;
+$color-light: white;
 
+// Font Variables
 $body-font: "Open Sans", sans-serif;
 $header-font: "Lobster", cursive;
 
@@ -15,7 +17,7 @@ body {
     font-family: $body-font;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: $header-font;
 }
 
@@ -88,17 +90,13 @@ a, a:hover {
 #reserveModal {
     .modal-header {
         background-color: $color-teal;
-    }
-    .modal-title {
-        color: white
+        color: $color-light;
     }
 }
 
 #loginModal {
     .modal-header {
         background-color: $color-mid;
-    }
-    .modal-title {
-        color: white
+        color: $color-light;
     }
 }
