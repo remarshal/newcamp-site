@@ -51,8 +51,13 @@ function isGuessCorrect(correct) {
         instructions.textContent = `I guessed your number in ${nGuesses} tries!`;
         resetBtn.style.display = "inline-block"
     } else {
-        toggleBtns([higherBtn, lowerBtn], true);
-        instructions.textContent = `Is your number higher or lower than ${currGuess}?`;
+        if (currGuess <= 1 || currGuess >= 100) {
+            instructions.textContent = ('Your number must be between 1 - 100!')
+            resetBtn.style.display = "inline-block"
+        } else {
+            toggleBtns([higherBtn, lowerBtn], true);
+            instructions.textContent = `Is your number higher or lower than ${currGuess}?`;
+        }
     }
 }
 
