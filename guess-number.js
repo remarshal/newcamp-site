@@ -18,7 +18,7 @@ yesBtn.addEventListener("click", () => isGuessCorrect(true));
 noBtn.addEventListener("click", () => isGuessCorrect(false));
 higherBtn.addEventListener("click", () => numIsHigher(true));
 lowerBtn.addEventListener("click", () => numIsHigher(false));
-resetBtn.addEventListener("click", () => refreshPage());
+resetBtn.addEventListener("click", resetGame);
 
 toggleBtns([startBtn], true);
 
@@ -73,6 +73,17 @@ function numIsHigher(higher) {
     tryGuess();
 }
 
-function refreshPage(){
-    window.location.reload();
+// window refresh option, but not a true reset
+// function refreshPage(){
+//     window.location.reload();
+// } 
+
+function resetGame(){
+    toggleBtns([resetBtn, guessBtn], false);
+    toggleBtns([startBtn], true);
+    nGuesses = 0;
+    currGuess = 0;  
+    max = 100;
+    min = 1;
+    instructions.textContent = "Think of a number between 1-100 and click the blue button when you're ready.";
 } 
